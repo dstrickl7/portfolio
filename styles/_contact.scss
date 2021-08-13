@@ -1,0 +1,82 @@
+//Modules
+@use 'variables';
+@use 'mixins';
+
+.contact {
+  width: 100%;
+  height: 75vh;
+  position: relative;
+}
+
+.contact-title {
+  top: 25%;
+}
+
+.action-call {
+  color: variables.$gold;
+  text-align: center;
+}
+
+.form-container {
+  width: 95vw;
+  height: 100%;
+  @include mixins.flex(center, center, column);
+}
+
+.form-input,
+.form-textbox {
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+  width: 75%;
+  margin-top: 1rem;
+}
+
+.form-input {
+  height: 2rem;
+}
+.form-textbox {
+  height: 5rem;
+}
+
+.submit-btn {
+  background-color: variables.$gold;
+  border-radius: 0.75rem;
+  border: none;
+  padding: 0.75rem;
+  width: 75%;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.angle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -5;
+  background: linear-gradient(variables.$deeppurp 25%, #421750);
+}
+
+// .angle svg {
+//   position: relative;
+//   display: block;
+//   width: calc(100% + 1.3px);
+//   height: 150px;
+//   transform: rotateY(180deg);
+// }
+
+.angle .shape-fill {
+  fill: #f0eff2;
+}
+
+.angle svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 63px;
+  transform: rotateY(180deg);
+}

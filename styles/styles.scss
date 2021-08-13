@@ -1,0 +1,49 @@
+//Modules
+@use 'variables';
+@use 'mixins';
+@use 'hero';
+@use 'navbar';
+@use 'about';
+@use 'projects';
+@use 'contact';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: variables.$montserrat;
+  background-color: #f0eff2;
+}
+
+.title-main {
+  text-transform: uppercase;
+  opacity: 0.15;
+  color: variables.$deeppurp;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 3rem;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+}
+
+.contact-title {
+  color: variables.$gold;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.attribution {
+  font-size: 0.5rem;
+}

@@ -1,0 +1,64 @@
+//Modules
+@use 'variables';
+@use 'mixins';
+
+.home {
+  height: 100vh;
+  width: 100%;
+}
+
+.intro {
+  font-weight: 800;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.intro-container {
+  padding: 1rem;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  top: 30%;
+  @include mixins.flex(center, center, column);
+}
+
+.scroll-container {
+  padding: 1rem;
+  width: 100%;
+  @include mixins.flex(center, center, column);
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  font-weight: 500;
+}
+
+.scroll-btn {
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 100%;
+  background-color: transparent;
+}
+
+.arrow {
+  color: #000000;
+  height: 2.5rem;
+}
+
+.hero-block {
+  width: 50vw;
+  height: 70vh;
+  position: absolute;
+  z-index: 0;
+}
+
+.gold-block {
+  background-color: variables.$gold;
+  top: 0;
+  right: 20%;
+}
+
+.purp-block {
+  background-color: variables.$deeppurp;
+  bottom: 0;
+  right: 0;
+}

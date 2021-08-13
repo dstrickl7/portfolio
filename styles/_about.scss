@@ -1,0 +1,98 @@
+//Modules
+@use 'variables';
+@use 'mixins';
+
+.about {
+  width: 100%;
+}
+
+.skills {
+  @include mixins.flex(center, center, column);
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.skill-title {
+  font-weight: 700;
+  margin: 1.5rem 0;
+}
+
+.skill-card {
+  @include mixins.flex(center, center, column);
+  width: 70vw;
+  height: 60vh;
+  background-color: #ffffff;
+  border-radius: 2.5rem;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+.skill-card-img {
+  @include mixins.flex(center, center);
+  width: 45%;
+}
+
+.skill {
+  font-weight: 500;
+}
+
+.diag-purp,
+.diag-gold {
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  z-index: -5;
+}
+
+.diag-purp {
+  background-color: variables.$deeppurp;
+  transform: skewY(-10deg);
+}
+
+.diag-gold {
+  background-color: variables.$gold;
+  transform: skewY(10deg);
+}
+
+.about-me {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  text-align: center;
+  @include mixins.flex(center, center, column);
+}
+
+.about-me-title {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.about-me-description {
+  font-weight: 500;
+}
+
+.gold-circle,
+.purp-circle {
+  border-radius: 100%;
+  width: 75vw;
+  height: 50%;
+  position: absolute;
+
+  z-index: -5;
+}
+
+.gold-circle {
+  background-color: variables.$gold;
+  top: 35%;
+  left: 5%;
+}
+
+.purp-circle {
+  background-color: variables.$deeppurp;
+  right: 5%;
+}
