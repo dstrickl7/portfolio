@@ -173,12 +173,31 @@
 }
 
 @media (min-width: 1024px) {
+  .logo-container {
+    width: 50%;
+    margin: 0;
+  }
+
+  .logo {
+    height: 4rem;
+  }
+
   .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 50%;
     z-index: 10;
+  }
+
+  .nav-container {
+    padding: 1.25rem;
+  }
+
+  .navlinks {
+    padding: 0;
+    padding-right: 1rem;
   }
 
   .hamburger {
