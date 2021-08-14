@@ -31,14 +31,17 @@
 }
 
 .navbar.active {
-  background-color: black;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   height: 100vh;
-  width: 100%;
+  width: 80%;
   display: flex;
   align-items: center;
+  background-color: #ffffff;
+  color: variables.$deeppurp;
+  @include mixins.flex(flex-end, center, column);
+  z-index: 2;
 }
 
 .navlist {
@@ -48,12 +51,16 @@
 .navlinks {
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 200;
-  padding: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1.25rem;
   line-height: 2.5rem;
+  color: #000000;
+}
+
+.menu-btn {
+  border: none;
+  background-color: transparent;
 }
 
 .hamburger {
@@ -72,4 +79,15 @@
 
 .close.active {
   display: inline;
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    @include mixins.flex(center, space-between);
+    z-index: 10;
+  }
+
+  .hamburger {
+    display: none;
+  }
 }

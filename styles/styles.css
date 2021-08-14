@@ -1,6 +1,7 @@
 .home {
   height: 100vh;
   width: 100%;
+  position: relative;
 }
 
 .intro {
@@ -12,13 +13,8 @@
 .intro-container {
   padding: 1rem;
   width: 100%;
-  z-index: 2;
   position: relative;
   top: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .scroll-container {
@@ -30,7 +26,6 @@
   align-items: center;
   position: absolute;
   bottom: 0;
-  z-index: 5;
   font-weight: 500;
 }
 
@@ -50,7 +45,7 @@
   width: 50vw;
   height: 70vh;
   position: absolute;
-  z-index: 0;
+  z-index: -2;
 }
 
 .gold-block {
@@ -65,6 +60,36 @@
   right: 0;
 }
 
+.face {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .intro-container {
+    width: 50%;
+    left: 50%;
+    top: 40%;
+  }
+
+  .intro {
+    text-align: left;
+  }
+
+  .face {
+    display: block;
+    position: absolute;
+    height: 70vh;
+    left: 5%;
+  }
+
+  .hero-block {
+    width: 30vw;
+  }
+
+  .gold-block {
+    right: 15%;
+  }
+}
 .logo {
   height: 3rem;
 }
@@ -94,14 +119,20 @@
 }
 
 .navbar.active {
-  background-color: black;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   height: 100vh;
-  width: 100%;
+  width: 80%;
   display: flex;
   align-items: center;
+  background-color: #ffffff;
+  color: #75298f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 2;
 }
 
 .navlist {
@@ -111,12 +142,16 @@
 .navlinks {
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 200;
-  padding: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1.25rem;
   line-height: 2.5rem;
+  color: #000000;
+}
+
+.menu-btn {
+  border: none;
+  background-color: transparent;
 }
 
 .hamburger {
@@ -137,6 +172,19 @@
   display: inline;
 }
 
+@media (min-width: 1024px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
 .about {
   width: 100%;
 }
@@ -287,13 +335,13 @@
 .btn-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   width: 60%;
 }
 
 .github {
-  height: 1rem;
+  height: 0.85rem;
   margin-left: 0.2rem;
 }
 
@@ -302,32 +350,45 @@
   margin-left: 0.2rem;
 }
 
-.project-btn {
+.btn-link {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.fill {
+  color: #ffffff;
+}
+
+.no-fill {
+  color: #000000;
+}
+
+.project-btn {
   width: 45%;
   height: 2rem;
   font-size: 0.7rem;
+  margin-right: 0.25rem;
 }
 
 .btn-fill {
   border: none;
   background-color: #000000;
-  color: #ffffff;
 }
 
 .btn-no-fill {
   border: solid #000000 0.15rem;
   background-color: transparent;
-  color: #000000;
 }
 
 .language-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 30%;
 }
@@ -342,6 +403,7 @@
   color: #000000;
   font-size: 0.3rem;
   padding: 0.1rem;
+  margin-left: 0.25rem;
 }
 
 .contact {

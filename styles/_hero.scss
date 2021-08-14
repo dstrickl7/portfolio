@@ -5,6 +5,7 @@
 .home {
   height: 100vh;
   width: 100%;
+  position: relative;
 }
 
 .intro {
@@ -16,10 +17,8 @@
 .intro-container {
   padding: 1rem;
   width: 100%;
-  z-index: 2;
   position: relative;
   top: 30%;
-  @include mixins.flex(center, center, column);
 }
 
 .scroll-container {
@@ -28,7 +27,6 @@
   @include mixins.flex(center, center, column);
   position: absolute;
   bottom: 0;
-  z-index: 5;
   font-weight: 500;
 }
 
@@ -48,7 +46,7 @@
   width: 50vw;
   height: 70vh;
   position: absolute;
-  z-index: 0;
+  z-index: -2;
 }
 
 .gold-block {
@@ -61,4 +59,34 @@
   background-color: variables.$deeppurp;
   bottom: 0;
   right: 0;
+}
+
+.face {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .intro-container {
+    width: 50%;
+    left: 50%;
+    top: 40%;
+  }
+  .intro {
+    text-align: left;
+  }
+
+  .face {
+    display: block;
+    position: absolute;
+    height: 70vh;
+    left: 5%;
+  }
+
+  .hero-block {
+    width: 30vw;
+  }
+
+  .gold-block {
+    right: 15%;
+  }
 }
