@@ -41,7 +41,6 @@
 .diag-gold {
   height: 100%;
   width: 100%;
-
   position: absolute;
   top: 0;
   z-index: -5;
@@ -82,7 +81,6 @@
   width: 75vw;
   height: 50%;
   position: absolute;
-
   z-index: -5;
 }
 
@@ -95,4 +93,44 @@
 .purp-circle {
   background-color: variables.$deeppurp;
   right: 5%;
+}
+
+@media (min-width: 1024px) {
+  .skills {
+    @include mixins.flex(center, space-evenly);
+    margin: 3rem 0;
+    padding: 3rem 0;
+  }
+
+  .skill-card {
+    width: 25vw;
+  }
+
+  .skill-card-img {
+    width: 35%;
+  }
+
+  .gold-circle,
+  .purp-circle {
+    width: 40vw;
+    height: 60%;
+  }
+
+  .gold-circle {
+    top: 20%;
+    left: 15%;
+  }
+
+  .purp-circle {
+    top: 10%;
+    right: 15%;
+  }
+
+  .about-me-title {
+    font-size: 1.25rem;
+  }
+
+  .about-me-description {
+    width: 50%;
+  }
 }

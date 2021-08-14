@@ -21,6 +21,7 @@ body {
 
 .title-main {
   text-transform: uppercase;
+  font-weight: 800;
   opacity: 0.15;
   color: variables.$deeppurp;
   writing-mode: vertical-lr;
@@ -46,4 +47,10 @@ body {
 
 .attribution {
   font-size: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .title-main {
+    font-size: 4rem;
+  }
 }

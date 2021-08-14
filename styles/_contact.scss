@@ -4,8 +4,9 @@
 
 .contact {
   width: 100%;
-  height: 75vh;
+  height: 100vh;
   position: relative;
+  @include mixins.flex(center, space-around, column);
 }
 
 .contact-title {
@@ -61,14 +62,6 @@
   background: linear-gradient(variables.$deeppurp 25%, #421750);
 }
 
-// .angle svg {
-//   position: relative;
-//   display: block;
-//   width: calc(100% + 1.3px);
-//   height: 150px;
-//   transform: rotateY(180deg);
-// }
-
 .angle .shape-fill {
   fill: #f0eff2;
 }
@@ -79,4 +72,18 @@
   width: calc(100% + 1.3px);
   height: 63px;
   transform: rotateY(180deg);
+}
+
+@media (min-width: 1024px) {
+  .contact {
+    padding-top: 3rem;
+  }
+
+  .angle svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+  }
 }
