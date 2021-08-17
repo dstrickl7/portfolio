@@ -20,16 +20,18 @@
 }
 .project-name {
   padding-bottom: 0.5rem;
-  font-size: 0.9rem;
+  font-weight: 800;
+  // font-size: 0.9rem;
 }
 .project-description {
   padding: 1rem;
   height: 35%;
+  width: 100%;
 }
 .description {
-  font-weight: 500;
+  font-weight: 400;
   padding-bottom: 1rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .box-container {

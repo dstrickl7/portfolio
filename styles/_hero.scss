@@ -29,6 +29,9 @@
   position: absolute;
   bottom: 0;
   font-weight: 500;
+  a {
+    height: 100%;
+  }
 }
 
 .scroll-btn {
@@ -36,6 +39,7 @@
   border: none;
   border-radius: 100%;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .arrow {

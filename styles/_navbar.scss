@@ -101,6 +101,25 @@
   .navlinks {
     padding: 0;
     padding-right: 1rem;
+    position: relative;
+    display: inline-block;
+    &:after {
+      bottom: 0;
+      content: "";
+      height: 0.25rem;
+      left: 50%;
+      position: absolute;
+      background-color: variables.$deeppurp;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0%;
+    }
+  }
+
+  .navlinks:hover {
+    &:after {
+      width: calc(100% - 1rem);
+      left: 0%;
+    }
   }
 
   .hamburger {
