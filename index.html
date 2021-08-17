@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Dealing with viewer height resizing due to  in mobile android keyboard -->
     <script>
         var viewport = document.querySelector("meta[name=viewport]");
         viewport.setAttribute("content", viewport.content + ", height=" + window.innerHeight);
@@ -49,7 +50,6 @@
                 <button class="scroll-btn">
                     <img src="styles/Images/icons/arrow.svg" alt="arrow" class="arrow">
                 </button>
-
             </a>
         </div>
 

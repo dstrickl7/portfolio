@@ -22,6 +22,7 @@
 }
 
 .scroll-container {
+  margin: 2rem 0;
   padding: 1rem;
   width: 100%;
   @include mixins.flex(center, center, column);
