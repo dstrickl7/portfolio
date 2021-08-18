@@ -104,7 +104,7 @@
     position: relative;
     display: inline-block;
     &:after {
-      bottom: 0;
+      bottom: 10%;
       content: "";
       height: 0.25rem;
       left: 50%;
@@ -116,6 +116,7 @@
   }
 
   .navlinks:hover {
+    color: variables.$deeppurp;
     &:after {
       width: calc(100% - 1rem);
       left: 0%;

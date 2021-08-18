@@ -92,7 +92,7 @@
 
 .language {
   @include mixins.flex(center, center);
-  border: solid #000000 0.1rem;
+  border: solid #7a7a7a 0.05rem;
   background-color: transparent;
   color: #000000;
   font-size: 0.3rem;
@@ -111,6 +111,13 @@
     padding: 2.5rem;
   }
 
+  .project-btn {
+    &:hover {
+      background-color: #b9b9b9;
+      border: none;
+    }
+  }
+
   .card {
     width: 35vw;
     height: 60vh;
@@ -119,6 +126,11 @@
 
   .description {
     height: 50%;
+  }
+
+  .language {
+    font-size: 0.5rem;
+    padding: 0.2rem;
   }
 }
 

@@ -81,22 +81,23 @@
 
 .gold-circle,
 .purp-circle {
-  border-radius: 100%;
-  width: 75vw;
-  height: 50%;
   position: absolute;
   z-index: -5;
+  clip-path: circle(30%);
+  width: 75%;
+  height: 75vh;
 }
 
 .gold-circle {
   background-color: variables.$gold;
-  top: 35%;
+  top: 25%;
   left: 5%;
 }
 
 .purp-circle {
   background-color: variables.$deeppurp;
   right: 5%;
+  top: 5%;
 }
 
 @media (min-width: 1024px) {
@@ -116,18 +117,17 @@
 
   .gold-circle,
   .purp-circle {
-    width: 40vw;
-    height: 60%;
+    clip-path: circle(35%);
   }
 
   .gold-circle {
-    top: 20%;
-    left: 15%;
+    top: 10%;
+    left: 25%;
   }
 
   .purp-circle {
-    top: 10%;
-    right: 15%;
+    top: 0;
+    right: 25%;
   }
 
   .about-me-title {
@@ -136,5 +136,12 @@
 
   .about-me-description {
     width: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .gold-circle,
+  .purp-circle {
+    clip-path: circle(30%);
   }
 }

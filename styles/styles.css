@@ -208,7 +208,7 @@
     display: inline-block;
   }
   .navlinks:after {
-    bottom: 0;
+    bottom: 10%;
     content: "";
     height: 0.25rem;
     left: 50%;
@@ -218,6 +218,9 @@
     width: 0%;
   }
 
+  .navlinks:hover {
+    color: #75298f;
+  }
   .navlinks:hover:after {
     width: calc(100% - 1rem);
     left: 0%;
@@ -318,22 +321,23 @@
 
 .gold-circle,
 .purp-circle {
-  border-radius: 100%;
-  width: 75vw;
-  height: 50%;
   position: absolute;
   z-index: -5;
+  clip-path: circle(30%);
+  width: 75%;
+  height: 75vh;
 }
 
 .gold-circle {
   background-color: #f6d96c;
-  top: 35%;
+  top: 25%;
   left: 5%;
 }
 
 .purp-circle {
   background-color: #75298f;
   right: 5%;
+  top: 5%;
 }
 
 @media (min-width: 1024px) {
@@ -356,18 +360,17 @@
 
   .gold-circle,
 .purp-circle {
-    width: 40vw;
-    height: 60%;
+    clip-path: circle(35%);
   }
 
   .gold-circle {
-    top: 20%;
-    left: 15%;
+    top: 10%;
+    left: 25%;
   }
 
   .purp-circle {
-    top: 10%;
-    right: 15%;
+    top: 0;
+    right: 25%;
   }
 
   .about-me-title {
@@ -376,6 +379,12 @@
 
   .about-me-description {
     width: 50%;
+  }
+}
+@media (min-width: 1440px) {
+  .gold-circle,
+.purp-circle {
+    clip-path: circle(30%);
   }
 }
 .projects {
@@ -493,7 +502,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: solid #000000 0.1rem;
+  border: solid #7a7a7a 0.05rem;
   background-color: transparent;
   color: #000000;
   font-size: 0.3rem;
@@ -515,6 +524,11 @@
     padding: 2.5rem;
   }
 
+  .project-btn:hover {
+    background-color: #b9b9b9;
+    border: none;
+  }
+
   .card {
     width: 35vw;
     height: 60vh;
@@ -523,6 +537,11 @@
 
   .description {
     height: 50%;
+  }
+
+  .language {
+    font-size: 0.5rem;
+    padding: 0.2rem;
   }
 }
 @media (min-width: 1440px) {
