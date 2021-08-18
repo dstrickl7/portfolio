@@ -8,6 +8,16 @@
   min-height: 100vh;
   position: relative;
   @include mixins.flex(center, space-around, column);
+  &:after {
+    content: "";
+    height: 6vh;
+    width: 100%;
+    z-index: -5;
+    background-color: #421750;
+    position: absolute;
+    bottom: -5%;
+    overflow: hidden;
+  }
 }
 
 .contact-title {

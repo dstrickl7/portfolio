@@ -542,6 +542,16 @@
   justify-content: space-around;
   align-items: center;
 }
+.contact:after {
+  content: "";
+  height: 6vh;
+  width: 100%;
+  z-index: -5;
+  background-color: #421750;
+  position: absolute;
+  bottom: -5%;
+  overflow: hidden;
+}
 
 .contact-title {
   top: 25%;
