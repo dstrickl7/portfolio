@@ -21,11 +21,10 @@
 .project-name {
   padding-bottom: 0.5rem;
   font-weight: 800;
-  // font-size: 0.9rem;
 }
 .project-description {
   padding: 1rem;
-  height: 35%;
+  height: 40%;
   width: 100%;
 }
 .description {
@@ -102,6 +101,10 @@
 }
 
 @media (min-width: 1024px) {
+  .project-img {
+    object-fit: cover;
+  }
+
   .projects {
     @include mixins.flex(center, space-evenly);
     flex-wrap: wrap;
@@ -109,12 +112,20 @@
   }
 
   .card {
-    width: 30vw;
-    height: 55vh;
+    width: 35vw;
+    height: 60vh;
     margin: 1.5rem;
   }
 
-  .project-description {
-    padding-top: 0;
+  .description {
+    height: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card {
+    width: 25vw;
+    height: 55vh;
+    margin: 1.5rem;
   }
 }
