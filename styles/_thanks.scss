@@ -1,0 +1,68 @@
+//Modules
+@use 'variables';
+@use 'mixins';
+
+.container {
+  width: 100%;
+  height: 100vh;
+  @include mixins.flex(center, center, column);
+}
+
+.thanks-title {
+  width: 50%;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  @include mixins.flex(center, center);
+  &:before {
+    content: "";
+    width: 25%;
+    height: 1rem;
+    background-color: variables.$gold;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+  }
+  &:after {
+    content: "";
+    width: 25%;
+    height: 1rem;
+    background-color: variables.$deeppurp;
+    z-index: -1;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.return-link {
+  color: variables.$deeppurp;
+}
+
+@media (min-width: 1024px) {
+  .thanks-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .thanks-title {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .thanks-title {
+    font-size: 7.5rem;
+    margin-bottom: 2rem;
+    &:before {
+      height: 1.5rem;
+    }
+    &:after {
+      height: 1.5rem;
+    }
+  }
+
+  .return-link {
+    font-size: 2rem;
+  }
+}
