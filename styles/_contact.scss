@@ -90,11 +90,39 @@
     padding-top: 3rem;
   }
 
+  .form-container {
+    width: 75vw;
+  }
+
   .angle svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 150px;
     transform: rotateY(180deg);
+  }
+}
+
+@media (min-width: 1920px) {
+  .contact {
+    height: unset;
+  }
+
+  .action-call {
+    font-size: 2rem;
+  }
+
+  .form-input {
+    height: 3.5rem;
+    padding: 1rem;
+  }
+
+  .form-input::-webkit-input-placeholder,
+  .form-textbox::-webkit-input-placeholder {
+    font-size: 1.25rem;
+  }
+
+  .form-textbox {
+    height: 10rem;
   }
 }

@@ -36,6 +36,7 @@
 .box-container {
   @include mixins.flex(flex-end, space-between);
   width: 100%;
+  min-height: 25%;
 }
 
 .btn-container {
@@ -112,6 +113,10 @@
   }
 
   .project-btn {
+    min-height: 100%;
+    a {
+      font-size: 0.75rem;
+    }
     &:hover {
       background-color: #b9b9b9;
       border: none;
@@ -126,6 +131,7 @@
 
   .description {
     height: 50%;
+    line-height: 1.5rem;
   }
 
   .language {
@@ -139,5 +145,31 @@
     width: 25vw;
     height: 55vh;
     margin: 1.5rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .project-description {
+    padding: 1.5rem;
+  }
+
+  .project-name {
+    font-size: 1.75rem;
+  }
+
+  .description {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .project-btn {
+    a {
+      font-size: 1rem;
+    }
+  }
+
+  .language {
+    font-size: 0.75rem;
+    padding: 0.25rem;
   }
 }

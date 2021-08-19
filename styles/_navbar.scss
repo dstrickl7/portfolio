@@ -127,3 +127,13 @@
     display: none;
   }
 }
+
+@media (min-width: 1920px) {
+  .logo {
+    height: 6rem;
+  }
+
+  .navlinks {
+    font-size: 1.5rem;
+  }
+}

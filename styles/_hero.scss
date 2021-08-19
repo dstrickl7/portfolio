@@ -43,7 +43,6 @@
 }
 
 .arrow {
-  color: #000000;
   height: 2.5rem;
 }
 
@@ -93,5 +92,19 @@
 
   .gold-block {
     right: 15%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .intro {
+    font-size: 3rem;
+  }
+
+  .scroll-container {
+    font-size: 1.5rem;
+  }
+
+  .arrow {
+    height: 3rem;
   }
 }

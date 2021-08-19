@@ -145,3 +145,35 @@
     clip-path: circle(30%);
   }
 }
+
+@media (min-width: 1920px) {
+  .skill-card {
+    margin-top: 5rem;
+  }
+
+  .diag-purp,
+  .diag-gold {
+    min-height: 85vh;
+  }
+
+  .skill-title {
+    font-size: 1.75rem;
+  }
+
+  .skill {
+    font-size: 1.25rem;
+  }
+
+  .about-me {
+    margin-top: 15rem;
+  }
+
+  .about-me-title {
+    font-size: 1.75rem;
+  }
+
+  .about-me-description {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
