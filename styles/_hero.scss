@@ -48,20 +48,22 @@
 }
 
 .hero-block {
-  width: 50vw;
-  height: 70vh;
   position: absolute;
   z-index: -2;
 }
 
 .gold-block {
   background-color: variables.$gold;
-  top: 0;
-  right: 20%;
+  width: 50%;
+  height: 30%;
+  right: 0;
+  bottom: 0;
 }
 
 .purp-block {
   background-color: variables.$purp;
+  width: 35%;
+  height: 40%;
   bottom: 0;
   right: 0;
 }
@@ -75,18 +77,6 @@
     font-size: 1.5rem;
     line-height: 1.5rem;
     font-weight: 700;
-  }
-
-  .gold-block {
-    width: 50%;
-    height: 30%;
-    right: 0;
-    bottom: 0;
-    top: unset;
-  }
-  .purp-block {
-    width: 35%;
-    height: 40%;
   }
 }
 
@@ -109,10 +99,14 @@
 
   .hero-block {
     width: 30vw;
+    height: 70vh;
+    position: absolute;
+    z-index: -2;
   }
 
   .gold-block {
     right: 15%;
+    top: 0;
   }
 }
 
