@@ -12,6 +12,7 @@
   font-weight: 800;
   text-align: center;
   font-size: 2rem;
+  line-height: 2.5rem;
 }
 
 .intro-container {
@@ -67,6 +68,26 @@
 
 .face {
   display: none;
+}
+
+@media (max-width: 325px) {
+  .intro {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+  }
+
+  .gold-block {
+    width: 50%;
+    height: 30%;
+    right: 0;
+    bottom: 0;
+    top: unset;
+  }
+  .purp-block {
+    width: 35%;
+    height: 40%;
+  }
 }
 
 @media (min-width: 1024px) {
