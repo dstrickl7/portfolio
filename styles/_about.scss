@@ -49,7 +49,7 @@
 }
 
 .diag-purp {
-  background-color: variables.$deeppurp;
+  background-color: variables.$purp;
   transform: skewY(-10deg);
 }
 
@@ -95,7 +95,7 @@
 }
 
 .purp-circle {
-  background-color: variables.$deeppurp;
+  background-color: variables.$purp;
   right: 5%;
   top: 5%;
 }
@@ -126,7 +126,7 @@
   }
 
   .purp-circle {
-    top: 5;
+    top: 5%;
     right: 25%;
   }
 

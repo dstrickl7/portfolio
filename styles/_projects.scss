@@ -1,6 +1,7 @@
 //Modules
 @use 'variables';
 @use 'mixins';
+
 .projects {
   width: 100%;
   @include mixins.flex(center, center, column);
@@ -99,6 +100,12 @@
   font-size: 0.3rem;
   padding: 0.1rem;
   margin-left: 0.25rem;
+}
+
+@media (max-width: 325px) {
+  .btn-link {
+    font-size: 0.6rem;
+  }
 }
 
 @media (min-width: 1024px) {

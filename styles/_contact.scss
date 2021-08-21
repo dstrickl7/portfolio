@@ -24,6 +24,11 @@
   top: 25%;
 }
 
+.action-call-container {
+  max-width: 75%;
+  margin-bottom: 1rem;
+}
+
 .action-call {
   color: variables.$gold;
   text-align: center;
@@ -86,6 +91,14 @@
 }
 
 @media (min-width: 1024px) {
+  .action-call-container {
+    margin-bottom: 2rem;
+  }
+
+  .action-call {
+    font-size: 1.25rem;
+  }
+
   .contact {
     padding-top: 3rem;
   }

@@ -94,6 +94,11 @@
     z-index: 10;
   }
 
+  .navlist {
+    @include mixins.flex(center, space-between);
+    width: 100%;
+  }
+
   .nav-container {
     padding: 1.25rem;
   }
