@@ -4,6 +4,7 @@
 
 .projects {
   width: 100%;
+  min-height: 100vh;
   @include mixins.flex(center, center, column);
   padding: 2.5rem 0;
 }
@@ -169,6 +170,10 @@
 }
 
 @media (min-width: 1440px) {
+  .projects {
+    margin-bottom: 5rem;
+  }
+
   .card {
     width: 25vw;
     height: 55vh;
