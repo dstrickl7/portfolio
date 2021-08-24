@@ -22,7 +22,7 @@ This is my personal portfolio designed and coded by me showcasing what I have le
 
 ### The challenge
 
-Design and code a portfolio that is responsive and showcases my knowledge and skills.
+Design and code a portfolio that is responsive and showcases my knowledge and skills that allows prospective employers to contact me.
 
 ### Screenshot
 
@@ -62,6 +62,7 @@ This is the first website that I have ever designed and deployed. I discovered h
 - I would also like to add animation in some way. Maybe have the navbar slide out
 - I was alerted to an issue with my layout in Safari browsers on mobile that I need to fix.
 - Forms. I didn't realize how complex forms could really be until I needed to send the data and receive it.
+- Adding more projects.
 
 
 ### Useful resources
