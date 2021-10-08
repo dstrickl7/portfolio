@@ -486,10 +486,6 @@
   width: 80vw;
   margin-bottom: 1rem;
 }
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: rgba(200, 200, 200, 0.5) 1rem 0.5rem 0.75rem;
-}
 
 .project-img {
   width: 100%;
@@ -659,6 +655,10 @@
     height: 60vh;
     margin: 1.5rem;
   }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(200, 200, 200, 0.5) 1rem 0.5rem 0.75rem;
+  }
 
   .description {
     height: 50%;
@@ -676,7 +676,7 @@
   }
 
   .card {
-    width: 25vw;
+    width: 30vw;
     height: 55vh;
     margin: 1.5rem;
   }

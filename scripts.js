@@ -15,6 +15,15 @@ close.addEventListener("click", () => {
   hamburger.classList.toggle("active");
 });
 
+// Close navlist when a link is clicked
+let navlink = document.querySelectorAll(".navlinks");
+
+navlink.forEach((link) =>
+  link.addEventListener("click", () => {
+    close.click();
+  })
+);
+
 /*Chooses image based on screen width */
 
 const project1 = document.getElementById("project1");
@@ -23,14 +32,14 @@ const project3 = document.getElementById("project3");
 const project4 = document.getElementById("project4");
 
 if (document.documentElement.clientWidth > 600) {
-  project1.src = "styles/Images/desktop/room-homepage.png";
+  project1.src = "styles/Images/desktop/room-homepage-1.png";
   project2.src = "styles/Images/desktop/loopstudios-desktop.png";
-  // project3.src=;
+  project3.src = "styles/Images/desktop/easybank.png";
   project4.src = "styles/Images/desktop/portfolio-desktop.png";
 } else {
   project1.src = "styles/Images/mobile/room-homepage-mobile.png";
   project2.src = "styles/Images/mobile/loopstudios-mobile.png";
-  // project3.src=;
+  project3.src = "styles/Images/mobile/easybank-mobile.png";
   project4.src = "styles/Images/mobile/portfolio-mobile.png";
 }
 

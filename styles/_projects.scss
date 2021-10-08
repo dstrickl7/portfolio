@@ -14,10 +14,6 @@
   background-color: #ffffff;
   width: 80vw;
   margin-bottom: 1rem;
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: rgba(200, 200, 200, 0.5) 1rem 0.5rem 0.75rem;
-  }
 }
 .project-img {
   width: 100%;
@@ -130,9 +126,6 @@
   .btn-link {
     font-size: 0.8rem;
   }
-
-  .project-btn {
-  }
 }
 
 @media (min-width: 1024px) {
@@ -160,6 +153,10 @@
     width: 35vw;
     height: 60vh;
     margin: 1.5rem;
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: rgba(200, 200, 200, 0.5) 1rem 0.5rem 0.75rem;
+    }
   }
 
   .description {
@@ -179,7 +176,7 @@
   }
 
   .card {
-    width: 25vw;
+    width: 30vw;
     height: 55vh;
     margin: 1.5rem;
   }
