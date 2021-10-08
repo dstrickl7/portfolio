@@ -88,7 +88,7 @@
 }
 
 .language-container {
-  @include mixins.flex(center, flex-end);
+  @include mixins.flex(center, center);
   width: 35%;
 }
 

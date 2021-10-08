@@ -574,7 +574,7 @@
 .language-container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   width: 35%;
 }
@@ -977,4 +977,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles-v3.css.map */

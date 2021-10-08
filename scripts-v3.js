@@ -33,14 +33,14 @@ const project4 = document.getElementById("project4");
 
 if (document.documentElement.clientWidth > 600) {
   project1.src = "styles/Images/desktop/room-homepage-1.png";
-  project2.src = "styles/Images/desktop/loopstudios-desktop.png";
-  project3.src = "styles/Images/desktop/easybank.png";
-  project4.src = "styles/Images/desktop/portfolio-desktop.png";
+  project2.src = "styles/Images/desktop/loopstudios.png";
+  project3.src = "styles/Images/desktop/easybank-v2.png";
+  project4.src = "styles/Images/desktop/portfolio.png";
 } else {
-  project1.src = "styles/Images/mobile/room-homepage-mobile.png";
-  project2.src = "styles/Images/mobile/loopstudios-mobile.png";
-  project3.src = "styles/Images/mobile/easybank-mobile.png";
-  project4.src = "styles/Images/mobile/portfolio-mobile.png";
+  project1.src = "styles/Images/mobile/room-homepage.png";
+  project2.src = "styles/Images/mobile/loopstudios.png";
+  project3.src = "styles/Images/mobile/easybank.png";
+  project4.src = "styles/Images/mobile/portfolio.png";
 }
 
 /*Form validation*/
