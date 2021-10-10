@@ -35,14 +35,13 @@
 }
 
 .box-container {
-  @include mixins.flex(flex-end, space-between);
-  width: 100%;
-  min-height: 25%;
+  @include mixins.flex(center, space-between, column);
 }
 
 .btn-container {
-  @include mixins.flex(center, flex-start);
-  width: 60%;
+  margin-bottom: 1rem;
+  @include mixins.flex(center, space-evenly);
+  width: 100%;
 }
 
 .github {
@@ -109,16 +108,6 @@
     font-size: 1rem;
   }
 
-  .box-container {
-    @include mixins.flex(center, space-between, column);
-  }
-
-  .btn-container {
-    margin-bottom: 1rem;
-    @include mixins.flex(center, space-evenly);
-    width: 100%;
-  }
-
   .language-container {
     @include mixins.flex(center, center);
   }
@@ -128,15 +117,38 @@
   }
 }
 
+@media (min-width: 425px) {
+  .box-container {
+    margin-top: 1rem;
+    @include mixins.flex(center, space-between);
+    width: 100%;
+    min-height: 25%;
+  }
+
+  .btn-container {
+    @include mixins.flex(center, flex-start);
+    width: 60%;
+  }
+}
+
 @media (min-width: 1024px) {
   .project-img {
     object-fit: cover;
+    height: 55%;
   }
 
   .projects {
     @include mixins.flex(center, space-evenly);
     flex-wrap: wrap;
     padding: 2.5rem;
+  }
+
+  .project-description-upper {
+    height: 60%;
+  }
+
+  .btn-container {
+    margin-bottom: unset;
   }
 
   .project-btn {
@@ -157,6 +169,10 @@
       transform: scale(1.05);
       box-shadow: rgba(200, 200, 200, 0.5) 1rem 0.5rem 0.75rem;
     }
+  }
+
+  .project-description {
+    height: 45%;
   }
 
   .description {

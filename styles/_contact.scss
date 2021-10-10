@@ -1,6 +1,6 @@
 //Modules
-@use 'variables';
-@use 'mixins';
+@use "variables";
+@use "mixins";
 
 .contact {
   width: 100%;
@@ -113,6 +113,13 @@
     width: calc(100% + 1.3px);
     height: 150px;
     transform: rotateY(180deg);
+  }
+
+  .submit-btn {
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
   }
 }
 

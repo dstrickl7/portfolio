@@ -18,11 +18,13 @@ close.addEventListener("click", () => {
 // Close navlist when a link is clicked
 let navlink = document.querySelectorAll(".navlinks");
 
-navlink.forEach((link) =>
-  link.addEventListener("click", () => {
-    close.click();
-  })
-);
+if (document.documentElement.clientWidth < 1024) {
+  navlink.forEach((link) =>
+    link.addEventListener("click", () => {
+      close.click();
+    })
+  );
+}
 
 /*Chooses image based on screen width */
 

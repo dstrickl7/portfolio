@@ -511,19 +511,18 @@
 
 .box-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
-  width: 100%;
-  min-height: 25%;
+  align-items: center;
 }
 
 .btn-container {
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
-  width: 60%;
+  width: 100%;
 }
 
 .github {
@@ -599,22 +598,6 @@
     font-size: 1rem;
   }
 
-  .box-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .btn-container {
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-  }
-
   .language-container {
     display: flex;
     flex-direction: row;
@@ -626,9 +609,29 @@
     font-size: 0.8rem;
   }
 }
+@media (min-width: 425px) {
+  .box-container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 25%;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+  }
+}
 @media (min-width: 1024px) {
   .project-img {
     object-fit: cover;
+    height: 55%;
   }
 
   .projects {
@@ -638,6 +641,14 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 2.5rem;
+  }
+
+  .project-description-upper {
+    height: 60%;
+  }
+
+  .btn-container {
+    margin-bottom: unset;
   }
 
   .project-btn {
@@ -658,6 +669,10 @@
   .card:hover {
     transform: scale(1.05);
     box-shadow: rgba(200, 200, 200, 0.5) 1rem 0.5rem 0.75rem;
+  }
+
+  .project-description {
+    height: 45%;
   }
 
   .description {
@@ -823,6 +838,11 @@
     height: 150px;
     transform: rotateY(180deg);
   }
+
+  .submit-btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
 }
 @media (min-width: 1920px) {
   .contact {
@@ -977,4 +997,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=styles-v3.css.map */
+/*# sourceMappingURL=styles-v3-2.css.map */
